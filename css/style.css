@@ -1,0 +1,523 @@
+/* CONFIGURAÇÃO BÁSICA DO CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: #640404;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+	margin:0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+/* Estilo para o plugin SLICK */
+
+.slick-dotted ul {
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.slick-dotted li {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+    outline: 0;
+}
+
+.slick-dotted li button {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #d8d8d8;
+    border-width: 0;
+    background-color: #d8d8d8;
+    opacity: 1;
+    cursor: pointer;
+}
+
+li.slick-active button{
+    background-color: #688293;
+    color: #688293;
+}
+
+.slick-slide:focus{
+    outline: none;
+}
+
+/* Fim do estilo do plugin */
+
+/* ************************************** */
+/* CONFIGURAÇÃO DO ARQUIVO ATUAL DO SITE */
+/* inicio do Header */
+header {
+    padding: 20px 2%;
+    background-image: url('../imagens/menu_logo/bg-logo-menu.png');
+    background-size: contain;
+    background-position: center;
+    border-bottom: 2px solid black;
+}
+
+header .container .logo {
+    float: left;
+    width: 220px;
+}
+
+header .container .logo img{
+    float: left;
+}
+
+header .container .logo .logo-nome {
+    float: right;
+    width: auto;
+}
+
+header .container .logo .logo-nome h2{
+    color: white;
+}
+
+header .container .logo .logo-nome p{
+    color: white;
+}
+
+header .container nav.menu-desktop {
+    float: right;
+}
+
+header .container nav.menu-desktop ul {
+    list-style-type: none;
+}
+
+header .container nav.menu-desktop ul li{
+    float: left;
+    font-size: 14px;
+    font-weight: 600;    
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+header .container nav.menu-desktop ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+header .container nav.menu-mobile {
+    float: right;
+    width: 28px;
+    height: 28px;
+    margin-top: 15px;
+    background-image: url('../imagens/menu_logo/menu-mobile.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+    display: none;
+}
+
+header .container nav.menu-mobile ul {
+    display: none;
+    z-index: 999;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: #640404;
+    list-style-type: none;
+}
+
+header .container nav.menu-mobile ul li{
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-top: 2px solid black;
+}
+
+header .container nav.menu-mobile ul li:hover {
+    background-color: #772121c4;
+}
+
+header .container nav.menu-mobile ul li:nth-last-of-type(1){
+    border-bottom: 2px solid black;
+}
+
+header .container nav.menu-mobile ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* inicio da section-Mosaico */
+.mosaico-wraper{
+    background:  #640404;
+    padding: 2%;
+}
+
+.mosaico-single {
+    float: left;
+    width: calc(100% / 4);
+}
+
+.img-mosaico-single {
+    width: 100%;
+    padding-top: 100%;
+    background-color: white;
+    border: 3px solid  #640404;
+}
+
+/* inicio da section tipo */
+
+section.tipo > .container{
+    max-width: 1150px;
+    background:  #640404;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding-top: 30px; 
+}
+
+section.tipo >.container .box:nth-of-type(2n+1){
+    width: 30%;
+    padding: 30px 2%;
+    background-color: #CCBEBE;  
+}
+section.tipo >.container .box:nth-of-type(2){
+    width: 40%;
+    padding: 70px 2%;
+    background-color: #FFFFFF;
+    background-image: none;
+}
+section.tipo >.container .box h2{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 30px;
+    padding: 20px 0;
+}
+section.tipo >.container .box p{
+    font-family: 'Roboto';
+    font-size: 18px;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+
+/* inicio da section sobre */
+
+section.sobre{
+    height: auto;
+}
+section.sobre > .container{
+    max-width: 1200px;
+    background:  #640404;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    position: relative;
+    padding: 70px 5%;
+    height: auto;
+}
+section.sobre >.container .box:nth-of-type(1){
+    width: 400px;
+    height: 600px;
+    background-color: #CCBEBE;
+    margin-right: 60px;
+    margin-bottom: 30px;
+    
+}
+section.sobre >.container .box:nth-of-type(2){
+    width: 60%;
+    padding: -1px 2%;
+    color: white;
+    background-image: none;
+    height: 600px;
+}
+section.sobre >.container .box:nth-of-type(2) h2{
+   text-align: center;
+   font-family: 'Red Hat Display', sans-serif;
+   font-size: 30px;
+   text-decoration: underline white;
+}
+section.sobre >.container .box:nth-of-type(2) p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    padding: 10px 2%;
+}
+
+/* inicio tag servico */
+section.servicos{
+    background: white;
+}
+section.servicos .servicosBox{
+    padding: 3%;
+}
+section.servicos .servicosBox .servico-single {
+    float: left;
+    width: calc(100% / 3);
+}
+section.servicos h2{
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Red Hat Display', sans-serif;
+    text-decoration: underline;
+}
+
+section.servicos .servicosBox .servico-single .servicoTxt {
+    width: 100%;
+    background-color: white;
+    border: 30px solid white;
+}
+
+section.servicos .servicosBox .servico-single .servicoTxt > h3 {
+    font-size: 30px;
+    font-family: 'Red Hat Display', sans-serif;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+section.servicos .servicosBox .servico-single .servicoTxt > p{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+/*Inicio Tag ContatoForm */
+/*Classes Auxiliares */
+.w50{
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+.w100{
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+}
+
+/* Estilo Proprio */
+section.contatoForm .container{
+    max-width: 600px;
+}
+
+section.contatoForm .container > h2{
+    text-align: center;
+    padding: 30px 0;
+    text-decoration: underline white;
+    color: white;
+    font-size: 30px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.form-group label{
+    display: block;
+    margin: 8px 0;
+    color: white;
+    font-size: 25px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.form-group input[type=text],
+.form-group input[type=email],
+.form-group input[type=tel]{
+    width: 100%;
+    padding-left: 8px;
+    height: 40px;
+    margin-top: 6px;
+}
+
+.form-group input[type=submit]{
+    width: 140px;
+    height: 40px;
+    background: #CCBEBE;
+    color:black;
+    border: 0;
+    margin-top: 20px !important;
+    margin:auto;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Red Hat Display', sans-serif;
+    display: block;
+}
+
+.form-group textarea{
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/*inicio tag contato */
+section.contato{
+    padding: 50px 0;
+}
+
+section.contato > .container{
+    max-width: 1150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 30px 0; 
+    color: white;
+}
+
+section.contato >.container .box{
+    width: 40%;
+    height: 50%;
+    padding: 30px 2%;
+}
+
+section.contato >.container .box h2{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+section.contato >.container .box p{
+    font-family: 'Roboto';
+    font-size: 18px;
+    padding: 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.contato .email{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+}
+
+section.contato .email p{
+    font-family: 'Roboto';
+}
+
+/* inicio footer */
+footer{
+    padding: 20px 2%;
+    background-image: url('../imagens/menu_logo/bg-logo-menu.png');
+    background-size: contain;
+    background-position: center;
+    height: 100px;
+}
+/* footer div.container{
+    display: ;
+} */
+
+footer div.container .copyright{
+    float: left;
+    width: 50%;
+    color: white;
+    font-size: 16px;
+    padding-top: 18px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+footer div.container .icon{
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+footer div.container .icon i{
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+}
+
+
+/* ************************************************** */
+/* Inicio das medias screen */
+@media screen and (max-width: 1200px){
+    section.sobre > .container{
+        flex-direction: column;    
+    }
+    section.sobre >.container .box:nth-of-type(1){
+        margin-right: 0px;    
+    }
+    section.sobre >.container .box:nth-of-type(2){
+        padding: 0px 0%;
+        height: auto !important; 
+    }
+    section.sobre >.container .box:nth-of-type(2) p{
+        text-align: center !important;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    section.tipo > .container{
+        flex-direction: column;   
+    }
+    section.tipo >.container .box:nth-of-type(2n+1){
+        width: 70% !important;
+        padding: 30px 2%;
+        background-color: #CCBEBE;   
+    }
+    section.tipo >.container .box:nth-of-type(2){
+        width: 80% !important; 
+        padding: 30px 2% !important;
+        background-color: #FFFFFF;
+        background-image: none;
+    }
+}
+
+/* max-width: 768px */
+@media screen and (max-width: 768px) {
+    /* inicio do header */
+    header .container nav.menu-mobile {
+        display: block;
+    }
+    header .container nav.menu-desktop {
+        display: none;
+    }
+
+    footer{
+        padding: 20px 2%;
+        background-image: url('../imagens/menu_logo/bg-logo-menu.png');
+        background-size: contain;
+        background-position: center;
+        height: auto;
+    }
+
+    footer div.container .copyright{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer div.container .icon{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* footer div.container .icon i{
+        color: white;
+        font-size: 25px;
+        padding: 20px;
+    } */
+}
+
+@media screen and (max-width: 500px){
+    .w50{
+        width: 100%;
+    }
+
+    section.contato > .container{
+        flex-direction: column;   
+    }
+}
